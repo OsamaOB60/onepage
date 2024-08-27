@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            /* flex-direction: column; */
+            height: 100vh;
+            /* border: 1px solid red; */
+        }
+        .divitems {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            /* flex-direction: column; */
+            /* border: 1px solid green; */
+        }
+        .divitems img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* h1{
+           font-size: 7vmax
+        } */
+        
+         @media(max-width:690px){
+            #container{
+            flex-direction: column; 
+            align-items: center;
+        }   
+         } 
+        /* @media(min-width:690px){
+            #container{
+            flex-direction: row; 
+            align-items: left;
+        } 
+        .divitems{
+            width: 50%;}
+        }  */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="divitems">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</h3>
+            <h4><button>click me</button></h4>
+        </div>
+        <div class="divitems">
+            <img src="https://facts.net/wp-content/uploads/2023/09/19-facts-about-vector-despicable-me-1694736072.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+</html>

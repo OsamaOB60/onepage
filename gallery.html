@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,240px);
+            grid-template-rows: repeat(3,240px);
+            grid-gap: 20px;
+
+        }
+        .gallery img{
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            border-style: solid;
+        }
+        .gallery img:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <div><img src="1.jpg - Copy.jpg" alt="image1"></div>
+            <div><img src="2.jpg" alt="image1"></div>
+            <div><img src="1.jpg - Copy.jpg" alt="image1"></div>
+            <div><img src="2.jpg" alt="image1"></div>
+            <div><img src="2.jpg" alt="image1"></div>
+            <div><img src="2.jpg" alt="image1"></div>
+            <div><img src="2.jpg" alt="image1"></div>
+        </div>
+    </div>
+</body>
+</html>
